@@ -22,8 +22,16 @@ const posts = [
       "images/kamakura/cover.jpg",
       "images/kamakura/01.jpg","images/kamakura/02.jpg","images/kamakura/03.jpg","images/kamakura/04.jpg",
       "images/kamakura/05.jpg","images/kamakura/06.jpg","images/kamakura/07.jpg","images/kamakura/08.jpg",
-      "images/kamakura/09.jpg","images/kamakura/10.jpg","images/kamakura/11.jpg","images/kamakura/12.jpg"
+      "images/kamakura/09.jpg","images/kamakura/10.jpg","images/kamakura/11.jpg"
     ]
+  },
+  {
+    id: "hengshan",
+    title: "衡山",
+    category: "nature",
+    date: "2024-10",
+    thumb: "images/hengshan/00.jpg",
+    images: []
   },
   {
     id: "suzhou",
@@ -134,6 +142,27 @@ const posts = [
       "images/huangshan/05.jpg","images/huangshan/06.jpg","images/huangshan/07.jpg"
     ]
   },
+  {
+    id: "yangzhou",
+    title: "扬州",
+    category: "city",
+    date: "2024-07",
+    thumb: "images/yangzhou/00.jpg",
+    images: [
+      "images/yangzhou/00.jpg","images/yangzhou/01.jpg","images/yangzhou/02.jpg",
+      "images/yangzhou/03.jpg","images/yangzhou/04.jpg","images/yangzhou/05.jpg"
+    ]
+  },
+  {
+    id: "nanchang",
+    title: "南昌",
+    category: "city",
+    date: "2024-03",
+    thumb: "images/nanchang/00.jpg",
+    images: [
+      "images/nanchang/00.jpg","images/nanchang/01.jpg"
+    ]
+  }
 ];
 
 posts.sort((a, b) => b.date.localeCompare(a.date));
