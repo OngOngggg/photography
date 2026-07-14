@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yxzzz - 踏遍青山人未老</title>
+  <meta name="theme-color" content="#74787b">
+  <link rel="stylesheet" href="css/style.css?v=25">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-brand">yxzzz</a>
+      <div class="nav-links">
+        <a href="/" class="nav-link active" data-filter="all">全部</a>
+        <a href="#" class="nav-link" data-filter="city">城市</a>
+        <a href="#" class="nav-link" data-filter="nature">自然</a>
+        <button class="nav-search-btn" id="searchToggle">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Modal -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-backdrop" id="searchBackdrop"></div>
+    <div class="search-dialog">
+      <input type="text" class="search-input" id="searchInput" placeholder="搜索相册...">
+      <button class="search-close" id="searchClose">✕</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1 class="hero-title">yxzzz</h1>
+      <p class="hero-subtitle">踏遍青山人未老</p>
+    </div>
+    <div class="hero-scroll" id="scrollHint">
+      <span>向下滚动</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- Post Grid -->
+  <main class="container">
+    <div class="post-grid" id="postGrid"></div>
+    <div class="no-results" id="noResults" style="display:none">
+      <p>没有找到匹配的相册</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="social-links">
+        <a href="https://space.bilibili.com/387397458" target="_blank" rel="noopener">Bilibili</a>
+        <span class="social-divider">·</span>
+        <a href="https://www.xiaohongshu.com/user/profile/6255a11600000000100049eb" target="_blank" rel="noopener">小红书</a>
+        <span class="social-divider">·</span>
+        <a href="https://500px.com.cn/yxzzz" target="_blank" rel="noopener">500px</a>
+      </div>
+      <p class="copyright">&copy; 2024 yxzzz</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
