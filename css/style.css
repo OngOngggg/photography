@@ -278,17 +278,24 @@ body::after {
 
 .post-gallery {
   max-width: 1200px; margin: 0 auto; padding: 20px 24px 80px;
-  columns: 3; column-gap: 16px;
+  columns: 3; column-gap: 24px;
   position: relative; z-index: 1;
 }
 
 .post-gallery img {
   width: 100%; display: block;
   border-radius: 6px;
-  margin-bottom: 16px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 24px;
+  transition: transform 0.3s, box-shadow 0.3s, filter 0.6s ease, opacity 0.6s ease;
   cursor: pointer;
   background: rgba(255,255,255,0.03);
+  filter: blur(10px);
+  opacity: 0.6;
+}
+
+.post-gallery img.loaded {
+  filter: blur(0);
+  opacity: 1;
 }
 
 /* City divider */
@@ -376,6 +383,24 @@ body::after {
 }
 
 .post-card { animation: fadeInUp 0.6s ease both; }
+
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed; bottom: 32px; right: 32px; z-index: 999;
+  width: 44px; height: 44px;
+  background: rgba(50,50,55,0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50%;
+  color: #fff; font-size: 20px;
+  cursor: pointer;
+  opacity: 0; visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.back-to-top.visible { opacity: 1; visibility: visible; }
+.back-to-top:hover { background: rgba(60,60,65,0.85); transform: translateY(-2px); }
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {

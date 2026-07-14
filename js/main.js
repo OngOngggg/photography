@@ -1,6 +1,28 @@
 (function () {
   const isPostPage = document.querySelector('.post-page') !== null;
 
+  // ========== Bfcache: re-trigger animation on back navigation ==========
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      document.querySelectorAll('.post-card, .hero, .container, .footer, .post-page').forEach(el => {
+        el.style.animation = 'none';
+        el.offsetHeight; // force reflow
+        el.style.animation = '';
+      });
+    }
+  });
+
+  // ========== Back to top ==========
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+    }, { passive: true });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   // ========== Navbar + scroll hint transition ==========
   const navbar = document.getElementById('navbar');
   const hero = document.querySelector('.hero');
@@ -92,6 +114,7 @@
         currentFilter = link.dataset.filter;
         applyFilters();
         renderPosts();
+        postGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
 
@@ -190,6 +213,7 @@
         img.src = item;
         img.alt = '';
         img.loading = 'lazy';
+        img.addEventListener('load', () => img.classList.add('loaded'));
         img.addEventListener('click', () => openLightbox(item, imageList));
         postGallery.appendChild(img);
       }

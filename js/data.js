@@ -14,7 +14,7 @@ const posts = [
   },
   {
     id: "kamakura",
-    title: "镰仓",
+    title: "日本·镰仓",
     category: "city",
     date: "2025-07",
     thumb: "images/kamakura/cover.jpg",
@@ -29,9 +29,10 @@ const posts = [
     id: "hengshan",
     title: "衡山",
     category: "nature",
-    date: "2024-10",
+    date: "2023-01",
     thumb: "images/hengshan/00.jpg",
-    images: []
+    images: [],
+    count: 18
   },
   {
     id: "suzhou",
@@ -67,7 +68,8 @@ const posts = [
     category: "nature",
     date: "2025-06",
     thumb: "images/wugongshan/winter_00.jpg",
-    images: []
+    images: [],
+    count: 15
   },
   {
     id: "yunnan",
@@ -94,7 +96,8 @@ const posts = [
     category: "city",
     date: "2025-07",
     thumb: "images/kyoto/cover.jpg",
-    images: []  // images built dynamically in post page
+    images: [],
+    count: 31
   },
   {
     id: "hangzhou",
@@ -128,7 +131,8 @@ const posts = [
     category: "city",
     date: "2024-07",
     thumb: "images/nanjing/04.jpg",
-    images: []
+    images: [],
+    count: 11
   },
   {
     id: "huangshan",
