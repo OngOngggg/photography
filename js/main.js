@@ -178,13 +178,21 @@
       if (e.key === 'ArrowRight') nextImage();
     }
 
-    images.forEach(src => {
-      const img = document.createElement('img');
-      img.src = src;
-      img.alt = '';
-      img.loading = 'lazy';
-      img.addEventListener('click', () => openLightbox(src, images));
-      postGallery.appendChild(img);
+    const imageList = images.filter(s => !s.startsWith('__DIVIDER__'));
+    images.forEach(item => {
+      if (item.startsWith('__DIVIDER__')) {
+        const divider = document.createElement('div');
+        divider.className = 'gallery-divider';
+        divider.textContent = item.replace('__DIVIDER__', '');
+        postGallery.appendChild(divider);
+      } else {
+        const img = document.createElement('img');
+        img.src = item;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.addEventListener('click', () => openLightbox(item, imageList));
+        postGallery.appendChild(img);
+      }
     });
   }
 })();

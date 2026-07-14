@@ -1,5 +1,18 @@
 const posts = [
   {
+    id: "tokyo",
+    title: "日本·东京",
+    category: "city",
+    date: "2025-07",
+    thumb: "images/tokyo/cover.jpg",
+    images: [
+      "images/tokyo/cover.jpg",
+      "images/tokyo/01.jpg","images/tokyo/02.jpg","images/tokyo/03.jpg","images/tokyo/04.jpg",
+      "images/tokyo/05.jpg","images/tokyo/06.jpg","images/tokyo/07.jpg","images/tokyo/08.jpg",
+      "images/tokyo/09.jpg"
+    ]
+  },
+  {
     id: "kamakura",
     title: "镰仓",
     category: "city",
@@ -26,6 +39,29 @@ const posts = [
     ]
   },
   {
+    id: "siguniangshan",
+    title: "四姑娘山",
+    category: "nature",
+    date: "2024-10",
+    thumb: "images/siguniangshan/cover.jpg",
+    images: [
+      "images/siguniangshan/cover.jpg",
+      "images/siguniangshan/01.jpg","images/siguniangshan/02.jpg","images/siguniangshan/03.jpg","images/siguniangshan/04.jpg",
+      "images/siguniangshan/05.jpg","images/siguniangshan/06.jpg","images/siguniangshan/07.jpg","images/siguniangshan/08.jpg",
+      "images/siguniangshan/09.jpg","images/siguniangshan/10.jpg","images/siguniangshan/11.jpg","images/siguniangshan/12.jpg",
+      "images/siguniangshan/13.jpg","images/siguniangshan/14.jpg","images/siguniangshan/15.jpg","images/siguniangshan/16.jpg",
+      "images/siguniangshan/17.jpg"
+    ]
+  },
+  {
+    id: "wugongshan",
+    title: "武功山",
+    category: "nature",
+    date: "2025-06",
+    thumb: "images/wugongshan/winter_00.jpg",
+    images: []
+  },
+  {
     id: "yunnan",
     title: "云南",
     category: "nature",
@@ -48,134 +84,56 @@ const posts = [
     id: "japan-kansai",
     title: "日本·关西",
     category: "city",
-    date: "2025-10",
-    thumb: "images/japan-kansai/cover.jpg",
-    images: [
-      "images/japan-kansai/01.jpg",
-      "images/japan-kansai/02.jpg",
-      "images/japan-kansai/03.jpg",
-      "images/japan-kansai/04.jpg",
-      "images/japan-kansai/05.jpg",
-      "images/japan-kansai/06.jpg",
-      "images/japan-kansai/07.jpg",
-      "images/japan-kansai/08.jpg",
-      "images/japan-kansai/09.jpg",
-      "images/japan-kansai/10.jpg"
-    ]
+    date: "2025-07",
+    thumb: "images/kyoto/cover.jpg",
+    images: []  // images built dynamically in post page
   },
   {
     id: "hangzhou",
     title: "杭州",
     category: "city",
-    date: "2025-05",
+    date: "2024-12",
     thumb: "images/hangzhou/cover.jpg",
     images: [
-      "images/hangzhou/01.jpg",
-      "images/hangzhou/02.jpg",
-      "images/hangzhou/03.jpg",
-      "images/hangzhou/04.jpg",
-      "images/hangzhou/05.jpg",
-      "images/hangzhou/06.jpg"
+      "images/hangzhou/cover.jpg",
+      "images/hangzhou/01.jpg","images/hangzhou/02.jpg","images/hangzhou/03.jpg","images/hangzhou/04.jpg",
+      "images/hangzhou/05.jpg","images/hangzhou/06.jpg","images/hangzhou/07.jpg","images/hangzhou/08.jpg",
+      "images/hangzhou/09.jpg","images/hangzhou/10.jpg","images/hangzhou/11.jpg","images/hangzhou/12.jpg",
+      "images/hangzhou/13.jpg","images/hangzhou/14.jpg"
     ]
   },
   {
     id: "sanqingshan",
     title: "三清山",
     category: "nature",
-    date: "2025-04",
+    date: "2024-10",
     thumb: "images/sanqingshan/cover.jpg",
     images: [
-      "images/sanqingshan/01.jpg",
-      "images/sanqingshan/02.jpg",
-      "images/sanqingshan/03.jpg",
-      "images/sanqingshan/04.jpg",
-      "images/sanqingshan/05.jpg",
-      "images/sanqingshan/06.jpg"
-    ]
-  },
-  {
-    id: "wuhan",
-    title: "武汉",
-    category: "city",
-    date: "2025-03",
-    thumb: "images/wuhan/cover.jpg",
-    images: [
-      "images/wuhan/01.jpg",
-      "images/wuhan/02.jpg",
-      "images/wuhan/03.jpg",
-      "images/wuhan/04.jpg",
-      "images/wuhan/05.jpg",
-      "images/wuhan/06.jpg"
-    ]
-  },
-  {
-    id: "changsha",
-    title: "长沙",
-    category: "city",
-    date: "2024-12",
-    thumb: "images/changsha/cover.jpg",
-    images: [
-      "images/changsha/01.jpg",
-      "images/changsha/02.jpg",
-      "images/changsha/03.jpg",
-      "images/changsha/04.jpg",
-      "images/changsha/05.jpg"
+      "images/sanqingshan/cover.jpg",
+      "images/sanqingshan/01.jpg","images/sanqingshan/02.jpg","images/sanqingshan/03.jpg","images/sanqingshan/04.jpg",
+      "images/sanqingshan/05.jpg","images/sanqingshan/06.jpg","images/sanqingshan/07.jpg"
     ]
   },
   {
     id: "nanjing",
     title: "南京",
     category: "city",
-    date: "2024-11",
-    thumb: "images/nanjing/cover.jpg",
-    images: [
-      "images/nanjing/01.jpg",
-      "images/nanjing/02.jpg",
-      "images/nanjing/03.jpg",
-      "images/nanjing/04.jpg",
-      "images/nanjing/05.jpg"
-    ]
-  },
-  {
-    id: "yangzhou",
-    title: "扬州",
-    category: "city",
-    date: "2024-10",
-    thumb: "images/yangzhou/cover.jpg",
-    images: [
-      "images/yangzhou/01.jpg",
-      "images/yangzhou/02.jpg",
-      "images/yangzhou/03.jpg",
-      "images/yangzhou/04.jpg"
-    ]
+    date: "2024-07",
+    thumb: "images/nanjing/04.jpg",
+    images: []
   },
   {
     id: "huangshan",
     title: "黄山",
     category: "nature",
-    date: "2024-09",
+    date: "2024-04",
     thumb: "images/huangshan/cover.jpg",
     images: [
-      "images/huangshan/01.jpg",
-      "images/huangshan/02.jpg",
-      "images/huangshan/03.jpg",
-      "images/huangshan/04.jpg",
-      "images/huangshan/05.jpg"
+      "images/huangshan/cover.jpg",
+      "images/huangshan/01.jpg","images/huangshan/02.jpg","images/huangshan/03.jpg","images/huangshan/04.jpg",
+      "images/huangshan/05.jpg","images/huangshan/06.jpg","images/huangshan/07.jpg"
     ]
   },
-  {
-    id: "nanchang",
-    title: "南昌",
-    category: "city",
-    date: "2024-08",
-    thumb: "images/nanchang/cover.jpg",
-    images: [
-      "images/nanchang/01.jpg",
-      "images/nanchang/02.jpg",
-      "images/nanchang/03.jpg",
-      "images/nanchang/04.jpg",
-      "images/nanchang/05.jpg"
-    ]
-  }
 ];
 
+posts.sort((a, b) => b.date.localeCompare(a.date));

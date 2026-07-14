@@ -291,6 +291,17 @@ body::after {
   background: rgba(255,255,255,0.03);
 }
 
+/* City divider */
+.gallery-divider {
+  column-span: all;
+  text-align: center;
+  padding: 32px 0 16px;
+  font-family: 'LXGW WenKai', 'Noto Serif SC', serif;
+  font-size: 20px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 4px;
+}
+
 .post-gallery img:hover {
   transform: scale(1.015);
   box-shadow: 0 4px 24px rgba(0,0,0,0.3);
